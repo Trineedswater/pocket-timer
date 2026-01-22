@@ -4,12 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Countdown"
-    android:background="#F7A8C5">
+    android:background="#FFD4E8">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#ffb3d9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusText"
+            android:text="Downloading headpak..."
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:progressDrawable="@drawable/pixel_progress"
+            android:background="@drawable/pixel_progress_bg" />
+
+    </LinearLayout>
 
 </FrameLayout>
