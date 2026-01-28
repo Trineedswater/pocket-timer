@@ -31,6 +31,9 @@ data class CustomCountdownTimer(
         }
     }
 
+    fun reset( var millisInFuture : Long, var countDownInterval : Long) {//TODO
+        }
+
     fun pauseTimer(){
 
     }
